@@ -1,0 +1,29 @@
+
+#password-container{
+    margin-left:100px;
+    border-right:none;
+    border-bottom:none;
+    border-top-left-radius: 5%;
+    border-left:solid;
+    border-top:solid;
+    box-shadow:10px 10px 5px #888888;
+    width:500px;
+}
+
+#password-contaoner{
+    margin-left: 50px;
+}
+
+
+.body{
+    
+    margin: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    //margin-bottom: 500px;
+    border: 10px;
+    //background-color: blueviolet;
+    background-size: auto;
+    font-size: 16;
+    font-variant-caps: titling-caps;
+}

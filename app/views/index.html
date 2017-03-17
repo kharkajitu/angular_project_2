@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular Project 2</title>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+       // <link rel="stylesheet" href="/app/styles/styles.css">
+    </head>
+   
+    <body ng-app="attendance">
+        <div ng-controller="mainCtrl">
+            <password ng-if="!auth"></password>
+            <student-form ng-if="auth"></student-form>
+        </div>
+        
+         
+        
+        <!--Dependencies-->
+        <script type="text/javascript" src="/node_modules/angular/angular.js"></script>        
+        <script type="text/javascript" src="/node_modules/angular-aria/angular-aria.js"></script>        
+        <script type="text/javascript" src="/node_modules/angular-animate/angular-animate.js"></script>        
+        <script type="text/javascript" src="/node_modules/angular-material/angular-material.js"></script>
+        
+        
+        
+        <!--Custom Javascripts-->        
+        <script type="text/javascript" src="/app/scripts/attendance.js"></script>
+        <script type="text/javascript" src="/app/scripts/services/passwordService.js"></script>
+        <script type="text/livescript" src="/app/scripts/services/studentformService.js"></script>
+        <script type="text/javascript" src="/app/scripts/controllers/mainCtrl.js"></script>
+        <script type="text/javascript" src="/app/scripts/controllers/personCtrl.js"></script>
+        <script type="text/javascript" src="/app/scripts/controllers/passwordCtrl.js"></script>
+        <script type="text/javascript" src="/app/scripts/controllers/studentFormCtrl.js"></script>        
+        <script type="text/javascript" src="/app/scripts/directives/password.js"></script> 
+        <script type="text/javascript" src="/app/scripts/directives/studentForm.js"></script>
+        
+    </body>
+    
+</html>
