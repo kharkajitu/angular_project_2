@@ -1,0 +1,19 @@
+<div class="body">     
+    
+    <menu visible="visible" alignment="center" ng-click="">
+        <menu-item hash="form" ng-click="update(1)">Form</menu-item>
+        <menu-item hash="studentlist" ng-click="update(2)">Student List</menu-item>
+        <menu-item hash="attendance" ng-click="update(3)">Attendance</menu-item>
+        <menu-item hash="report" ng-click="update(4)">Report</menu-item>
+    </menu>
+    
+    <student ng-if="checkid==1"></student>
+    <student-list ng-if="checkid==2"></student-list>
+    <attendance ng-if="checkid==3"></attendance>
+    <report ng-if="checkid==4"></report>
+    
+</div>
+    
+    
+    
+    

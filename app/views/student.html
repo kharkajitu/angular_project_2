@@ -1,0 +1,54 @@
+<div id="password-container">
+    <div class="container" >
+        
+        
+    <form name="password-form">      
+    
+          <div class="row">
+            <div class="col-md-2">
+                <md-input-container>                    
+                    <input type="text" placeholder="Enter First Name" ng-model="studentForm.firstName">
+                </md-input-container>
+                
+                <md-input-container>
+                    <input type="text" placeholder="Enter Last Name" ng-model="studentForm.lastName">
+                </md-input-container>
+                
+                <md-input-container>
+                    <input type="text" placeholder="Enter Address" ng-model="studentForm.address">
+                </md-input-container>
+                
+                <md-input-container>                    
+                    <input type="date" placeholder="Enter DOB" ng-model="studentForm.dob" >
+                </md-input-container>
+                
+                <md-input-container>
+                    <input type="text" placeholder="Enter Phone Number" ng-model="studentForm.phone" >
+                </md-input-container><br>
+                
+                <md-radio-group ng-model= "studentForm.gender">
+                    Enter Your Gender:<br>
+                        <md-radio-button value="male" class="md-primary" ng-model="studentForm.gender">Male</md-radio-button>
+                        <md-radio-button value="female" ng-model="studentForm.gender"> Female </md-radio-button>
+                        <md-radio-button value="transgender" ng-model="studentForm.gender">Mention Not</md-radio-button>
+
+                </md-radio-group>
+                
+                
+                 <md-input-container>                    
+                    <input type="text" placeholder="email" ng-model="studentForm.email" >
+                 </md-input-container>
+                
+                 <md-input-container>                   
+                    <input type="text" placeholder="git username" ng-model="studentForm.gitusername" >
+                 </md-input-container>
+                
+            </div>
+        </div>
+
+    </form>
+        
+    </div>
+</div>
+
+<md-button ng-click="submitForm()">Submit</md-button>

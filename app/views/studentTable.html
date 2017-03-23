@@ -1,0 +1,30 @@
+
+ 
+<table class="table table hover" style="width:90%">
+    
+                
+    <caption>
+        <h3>Student Table</h3>
+        <input style="float:right" type="text" ng-model="search" placeholder="search">
+    </caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>DOB</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>E-mail</th>
+            <th>Git Username</th>
+        </tr>
+            <tr ng-repeat="student in dataStudentCtrl |filter:search:student">
+            <td>{{student.firstName}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.dob}}</td>
+            <td>{{student.phone}}</td>
+            <td>{{student.gender}}</td>
+            <td>{{student.email}}</td>
+            <td>{{student.gitusername}}</td>
+        </tr>    
+</table>

@@ -25,5 +25,35 @@
     //background-color: blueviolet;
     background-size: auto;
     font-size: 16;
-    font-variant-caps: titling-caps;
+    
 }
+
+menu{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    color: white;
+    
+}
+
+menu menu-item{
+    padding: 15px;
+    padding-left: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-style:normal;
+    font-style: bold;
+    
+}
+menu menu-item:hover{
+    background-color: white;
+    color:blueviolet;
+    cursor:pointer;
+    
+}
+
+table{
+    /*display: flex;*/
+    background-color: darkgray;
+}
+
